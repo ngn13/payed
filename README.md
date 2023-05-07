@@ -13,10 +13,6 @@ First you will need import `Payed`:
 ```
 import Payed from "payed"
 ```
-or you can use the CommonJS syntax:
-```
-const Payed = require("payed")
-```
 Then you can initialize it by providing your API key:
 ```
 const payed = new Payed("YOUR_API_KEY")

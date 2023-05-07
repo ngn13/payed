@@ -22,14 +22,14 @@ class Payed{
             .then((res)=>{
                 this.usd_to_eth(value).then((eth)=>{
                     let json = res.data
-                    if(json["status"]===0)
+                    if(json["status"]==="0")
                         return reject(json["result"])
                     
                     json["result"].forEach((r)=>{
                         if(
                             r["from"] === src &&
                             r["to"] === dst &&
-                            r["value"]/1000000000000000000 >= eth
+                            parseInt(r["value"])/1000000000000000000 >= eth
                         ){
                             resolve(true)
                         }
