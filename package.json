@@ -1,0 +1,29 @@
+{
+  "name": "payed",
+  "version": "1.0.0",
+  "description": "Confirm ethereum payments",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "nodemon test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngn13/payed.git"
+  },
+  "keywords": [
+    "ethereum",
+    "payment",
+    "api",
+    "etherscan"
+  ],
+  "author": "ngn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngn13/payed/issues"
+  },
+  "homepage": "https://github.com/ngn13/payed#readme",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
